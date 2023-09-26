@@ -28,8 +28,7 @@ echo -e "$blink 🇷 🇪 🇲 🇴 🇹 🇪    🇸 🇪 🇷 🇻 🇪 🇷  
 echo -e "$blink $skyblue-------------------------------------------------------$reset"
 echo -e "$skyblue---------------------------------------------------------$reset"
 
-echo -e "$skyblue Ⓒ  2023. All Rights Reserved. Powered by Faveo $reset"
-echo -e "$skyblue-----------------------------------------------$reset"
+echo -e "$skyblue Ⓒ  2023. All Rights Reserved. $reset"
 
 sleep 0.5
 
