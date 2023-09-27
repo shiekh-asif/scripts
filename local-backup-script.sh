@@ -71,14 +71,14 @@ sleep 0.05
 if [ "$remote_db" = "y" ]; then
     read -p "Enter the host IP: " HOST
     # Backup Remote Database
-    $MYSQLDUMP -h "$HOST" -u "$MUSER" -p"$MPASS" "$DBNAME" > "$dest/$archive_file2"
+    mysqldump -h "$HOST" -u "$MUSER" -p"$MPASS" "$DBNAME" > "$dest/$archive_file2"
 else
     if [ -z "$MPASS" ]; then
         # Backup local Database with no root password
-        $MYSQLDUMP "$DBNAME" > "$dest/$archive_file2"
+        mysqldump "$DBNAME" > "$dest/$archive_file2"
     else
         # Backup local Database
-        $MYSQLDUMP -u "$MUSER" -p"$MPASS" "$DBNAME" > "$dest/$archive_file2"
+        mysqldump -u "$MUSER" -p"$MPASS" "$DBNAME" > "$dest/$archive_file2"
     fi
 fi
 
